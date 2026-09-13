@@ -4,7 +4,7 @@ import { nunito } from "@/lib/fonts";
 import { LanguageProvider } from "@/components/layout/language-provider";
 import { LocaleDocumentTitle } from "@/components/layout/locale-document-title";
 import { translate } from "@/lib/i18n";
-import { isLocaleCode, type LocaleCode } from "@/lib/locale";
+import { isLocaleCode, LOCALE_COOKIE, type LocaleCode } from "@/lib/locale";
 import { SITE_LOGO, SITE_NAME, SITE_URL } from "@/lib/site-config";
 import { absoluteUrl } from "@/lib/structured-data/urls";
 import { descriptionToMetaDescription } from "@/lib/meta-description";
@@ -13,7 +13,7 @@ import "./globals.css";
 
 export async function generateMetadata(): Promise<Metadata> {
   const cookieStore = await cookies();
-  const cookieLocale = cookieStore.get("zenfun-locale")?.value;
+  const cookieLocale = cookieStore.get(LOCALE_COOKIE)?.value;
   const locale: LocaleCode =
     cookieLocale && isLocaleCode(cookieLocale) ? cookieLocale : "en";
 
@@ -38,6 +38,7 @@ export async function generateMetadata(): Promise<Metadata> {
     description,
     icons: {
       icon: [
+        { url: "/tdu-icon.svg", type: "image/svg+xml" },
         { url: "/favicon.png", sizes: "32x32", type: "image/png" },
         { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
         { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
@@ -82,7 +83,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const cookieStore = await cookies();
-  const cookieLocale = cookieStore.get("zenfun-locale")?.value;
+  const cookieLocale = cookieStore.get(LOCALE_COOKIE)?.value;
   const initialLocale: LocaleCode =
     cookieLocale && isLocaleCode(cookieLocale) ? cookieLocale : "en";
 

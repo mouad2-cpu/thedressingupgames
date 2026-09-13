@@ -246,7 +246,7 @@ export function GameForm({ categories, game }: Props) {
             className="form-input"
             value={metaTitle}
             onChange={(e) => setMetaTitle(e.target.value)}
-            placeholder="Title Unblocked ⚡ Play Free"
+            placeholder="Title Unblocked – Play Free Online"
           />
         </div>
         <div className="form-field">

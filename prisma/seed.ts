@@ -1,9 +1,27 @@
 import { PrismaClient, GameStatus, Role } from "@prisma/client";
 import bcrypt from "bcrypt";
+import { existsSync, readFileSync } from "fs";
+import path from "path";
+import { descriptionToMetaDescription } from "../src/lib/meta-description";
+import { CONTACT_EMAIL, SITE_NAME } from "../src/lib/site-config";
+import {
+  buildUnblockedDressUpDescription,
+  buildUnblockedGameDescription,
+  formatUnblockedDressUpMetaTitle,
+  formatUnblockedGameMetaTitle,
+} from "../src/lib/unblocked-game-seo";
 
 const prisma = new PrismaClient();
 
 const categories = [
+  {
+    slug: "dress-up",
+    name: "Dress Up",
+    icon: "shirt",
+    sortOrder: 0,
+    description:
+      "Play free unblocked dress-up games online. Fashion, makeup, salon, and character creators as HTML5 in your browser — no download.",
+  },
   { slug: "action", name: "Action", icon: "zap", sortOrder: 1 },
   { slug: "puzzle", name: "Puzzle", icon: "puzzle", sortOrder: 2 },
   { slug: "racing", name: "Racing", icon: "car", sortOrder: 3 },
@@ -12,197 +30,63 @@ const categories = [
   { slug: "strategy", name: "Strategy", icon: "crown", sortOrder: 6 },
 ];
 
-const games = [
-  {
-    slug: "space-blaster",
-    title: "Space Blaster",
-    description: "Blast through waves of alien ships in this fast-paced arcade shooter.",
-    thumbnail: "https://picsum.photos/seed/space-blaster/400/250",
-    embedPath: "https://www.crazygames.com/embed/space-battle",
-    featured: true,
-    categories: ["action", "arcade"],
-  },
-  {
-    slug: "block-puzzle-master",
-    title: "Block Puzzle Master",
-    description: "Fit blocks together and clear lines in this addictive puzzle game.",
-    thumbnail: "https://picsum.photos/seed/block-puzzle/400/250",
-    embedPath: "https://www.crazygames.com/embed/block-puzzle",
-    featured: true,
-    categories: ["puzzle"],
-  },
-  {
-    slug: "turbo-racer",
-    title: "Turbo Racer",
-    description: "Race against the clock on challenging tracks with nitro boosts.",
-    thumbnail: "https://picsum.photos/seed/turbo-racer/400/250",
-    embedPath: "https://www.crazygames.com/embed/turbo-racing",
-    featured: true,
-    categories: ["racing"],
-  },
-  {
-    slug: "penalty-kick-pro",
-    title: "Penalty Kick Pro",
-    description: "Score goals and become the ultimate penalty shootout champion.",
-    thumbnail: "https://picsum.photos/seed/penalty-kick/400/250",
-    embedPath: "https://www.crazygames.com/embed/penalty-shooters-2",
-    featured: true,
-    categories: ["sports"],
-  },
-  {
-    slug: "tower-defense-kingdom",
-    title: "Tower Defense Kingdom",
-    description: "Build towers and defend your kingdom from endless enemy waves.",
-    thumbnail: "https://picsum.photos/seed/tower-defense/400/250",
-    embedPath: "https://www.crazygames.com/embed/kingdom-defense",
-    featured: false,
-    categories: ["strategy"],
-  },
-  {
-    slug: "retro-snake",
-    title: "Retro Snake",
-    description: "Classic snake game with modern twists and power-ups.",
-    thumbnail: "https://picsum.photos/seed/retro-snake/400/250",
-    embedPath: "https://www.crazygames.com/embed/snake-io",
-    featured: false,
-    categories: ["arcade"],
-  },
-  {
-    slug: "bubble-shooter-deluxe",
-    title: "Bubble Shooter Deluxe",
-    description: "Pop colorful bubbles and clear the board before time runs out.",
-    thumbnail: "https://picsum.photos/seed/bubble-shooter/400/250",
-    embedPath: "https://www.crazygames.com/embed/bubble-shooter",
-    featured: true,
-    categories: ["puzzle", "arcade"],
-  },
-  {
-    slug: "ninja-dash",
-    title: "Ninja Dash",
-    description: "Run, jump, and slash through obstacles as a stealthy ninja warrior.",
-    thumbnail: "https://picsum.photos/seed/ninja-dash/400/250",
-    embedPath: "https://www.crazygames.com/embed/ninja-clash",
-    featured: false,
-    categories: ["action"],
-  },
-  {
-    slug: "drift-king",
-    title: "Drift King",
-    description: "Master the art of drifting on tight corners and earn style points.",
-    thumbnail: "https://picsum.photos/seed/drift-king/400/250",
-    embedPath: "https://www.crazygames.com/embed/drift-hunters",
-    featured: false,
-    categories: ["racing"],
-  },
-  {
-    slug: "basketball-stars",
-    title: "Basketball Stars",
-    description: "Dunk, shoot, and block your way to victory in 1v1 basketball matches.",
-    thumbnail: "https://picsum.photos/seed/basketball-stars/400/250",
-    embedPath: "https://www.crazygames.com/embed/basketball-stars",
-    featured: true,
-    categories: ["sports"],
-  },
-  {
-    slug: "chess-challenge",
-    title: "Chess Challenge",
-    description: "Test your chess skills against AI opponents of increasing difficulty.",
-    thumbnail: "https://picsum.photos/seed/chess-challenge/400/250",
-    embedPath: "https://www.crazygames.com/embed/chess-online",
-    featured: false,
-    categories: ["strategy", "puzzle"],
-  },
-  {
-    slug: "pixel-platformer",
-    title: "Pixel Platformer",
-    description: "Jump across platforms, collect coins, and defeat bosses in retro style.",
-    thumbnail: "https://picsum.photos/seed/pixel-platformer/400/250",
-    embedPath: "https://www.crazygames.com/embed/super-pickleball-adventure",
-    featured: false,
-    categories: ["action", "arcade"],
-  },
-  {
-    slug: "word-connect",
-    title: "Word Connect",
-    description: "Find hidden words by connecting letters in this brain-teasing puzzle.",
-    thumbnail: "https://picsum.photos/seed/word-connect/400/250",
-    embedPath: "https://www.crazygames.com/embed/word-wipe",
-    featured: false,
-    categories: ["puzzle"],
-  },
-  {
-    slug: "city-builder",
-    title: "City Builder",
-    description: "Plan roads, zones, and services to grow a thriving metropolis.",
-    thumbnail: "https://picsum.photos/seed/city-builder/400/250",
-    embedPath: "https://www.crazygames.com/embed/city-builder",
-    featured: false,
-    categories: ["strategy"],
-  },
-  {
-    slug: "soccer-legends",
-    title: "Soccer Legends",
-    description: "Play fast-paced soccer matches with legendary players and special moves.",
-    thumbnail: "https://picsum.photos/seed/soccer-legends/400/250",
-    embedPath: "https://www.crazygames.com/embed/soccer-legends",
-    featured: false,
-    categories: ["sports"],
-  },
-  {
-    slug: "gem-match",
-    title: "Gem Match",
-    description: "Swap gems to create matches of three or more and trigger cascades.",
-    thumbnail: "https://picsum.photos/seed/gem-match/400/250",
-    embedPath: "https://www.crazygames.com/embed/jewel-shuffle",
-    featured: false,
-    categories: ["puzzle", "arcade"],
-  },
-  {
-    slug: "zombie-survival",
-    title: "Zombie Survival",
-    description: "Fight off hordes of zombies with weapons and barricades.",
-    thumbnail: "https://picsum.photos/seed/zombie-survival/400/250",
-    embedPath: "https://www.crazygames.com/embed/zombie-outbreak",
-    featured: true,
-    categories: ["action"],
-  },
-  {
-    slug: "mini-golf-paradise",
-    title: "Mini Golf Paradise",
-    description: "Putt through creative courses with ramps, loops, and obstacles.",
-    thumbnail: "https://picsum.photos/seed/mini-golf/400/250",
-    embedPath: "https://www.crazygames.com/embed/minigolf-clash",
-    featured: false,
-    categories: ["sports"],
-  },
-  {
-    slug: "stack-tower",
-    title: "Stack Tower",
-    description: "Stack blocks as high as you can without letting them fall.",
-    thumbnail: "https://picsum.photos/seed/stack-tower/400/250",
-    embedPath: "https://www.crazygames.com/embed/stack",
-    featured: false,
-    categories: ["arcade"],
-  },
-  {
-    slug: "battle-tanks",
-    title: "Battle Tanks",
-    description: "Command your tank and destroy enemy bases in tactical combat.",
-    thumbnail: "https://picsum.photos/seed/battle-tanks/400/250",
-    embedPath: "https://www.crazygames.com/embed/tanks-battlefield",
-    featured: false,
-    categories: ["action", "strategy"],
-  },
-];
+const FEATURED_SLUGS = new Set([
+  "endless-siege",
+  "crazy-caves",
+  "jewel-academy",
+  "fullspeed-racing",
+  "hoop-hero",
+  "om-nom-run",
+  "merge-defenders",
+  "element-blocks",
+  "the-impossible-quiz",
+  "bloons-tower-defense-4",
+  "age-of-war",
+  "cut-the-rope",
+  "k-pop-stylist-idol-girls",
+  "toca-life-habillez-vous-pour-les-filles",
+  "pony-creator-jeu-dhabillage-pour-filles",
+  "lol-surprise-dolls-unlock-all-100",
+]);
 
-const PREVIEW_VIDEOS = [
-  "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
-  "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
-  "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
-  "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
-  "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
-  "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
-];
+type DraftGame = {
+  title: string;
+  slug: string;
+  embed: string;
+  thumbnail?: string | null;
+  coverFile?: string;
+  categories: string[];
+  hook?: string;
+  kind?: "dress-up" | "cooking";
+};
+
+const GENRE_LABEL: Record<string, string> = {
+  "dress-up": "dress-up",
+  action: "action",
+  puzzle: "puzzle",
+  racing: "racing",
+  sports: "sports",
+  arcade: "arcade",
+  strategy: "strategy",
+};
+
+function loadGameList(fileName: string): DraftGame[] {
+  const filePath = path.join(__dirname, fileName);
+  if (!existsSync(filePath)) return [];
+  const data = JSON.parse(readFileSync(filePath, "utf8")) as { games?: DraftGame[] };
+  return data.games ?? [];
+}
+
+function mergeGames(lists: DraftGame[][]): DraftGame[] {
+  const bySlug = new Map<string, DraftGame>();
+  for (const list of lists) {
+    for (const game of list) {
+      if (!game?.slug || !game?.embed) continue;
+      if (!bySlug.has(game.slug)) bySlug.set(game.slug, game);
+    }
+  }
+  return [...bySlug.values()];
+}
 
 async function main() {
   console.log("Seeding database...");
@@ -219,34 +103,60 @@ async function main() {
     (await prisma.category.findMany()).map((c) => [c.slug, c.id])
   );
 
-  for (const [index, game] of games.entries()) {
-    const { categories: catSlugs, ...gameData } = game;
+  const drafts = mergeGames([
+    loadGameList("gamesnacks-drafts.json"),
+    loadGameList("gamesnacks-batches-1-8-seed.json"),
+    loadGameList("batch25-gamesnacks.json"),
+    loadGameList("batch39-addictinggames.json"),
+    loadGameList("batch-playhop-dressup.json"),
+  ]);
+
+  for (const game of drafts) {
+    const catSlugs = game.categories?.length ? game.categories : [];
     const primarySlug = catSlugs[0];
     const primaryCategoryId = primarySlug ? categoryMap[primarySlug] : undefined;
+    if (!primaryCategoryId) continue;
+
+    const genre = GENRE_LABEL[primarySlug] ?? "browser";
+    const description = game.hook
+      ? buildUnblockedDressUpDescription(game.title, game.hook, undefined, game.kind ?? "dress-up")
+      : buildUnblockedGameDescription(game.title, genre);
+    const metaTitle =
+      game.kind === "cooking"
+        ? formatUnblockedGameMetaTitle(game.title)
+        : game.hook || primarySlug === "dress-up"
+          ? formatUnblockedDressUpMetaTitle(game.title)
+          : formatUnblockedGameMetaTitle(game.title);
+    const metaDescription = descriptionToMetaDescription(description);
+    const thumbnail = game.thumbnail?.startsWith("/")
+      ? game.thumbnail
+      : `/game-covers/${game.coverFile ?? `${game.slug}.png`}`;
     const now = new Date();
-    const previewVideo = PREVIEW_VIDEOS[index % PREVIEW_VIDEOS.length];
+    const featured = FEATURED_SLUGS.has(game.slug);
 
     const created = await prisma.game.upsert({
-      where: { slug: gameData.slug },
+      where: { slug: game.slug },
       update: {
-        title: gameData.title,
-        description: gameData.description,
-        thumbnail: gameData.thumbnail,
-        previewVideo,
-        embedPath: gameData.embedPath,
-        featured: gameData.featured,
+        title: game.title,
+        description,
+        metaTitle,
+        metaDescription,
+        thumbnail,
+        embedPath: game.embed,
+        featured,
         status: GameStatus.published,
         primaryCategoryId,
         releasedAt: now,
       },
       create: {
-        title: gameData.title,
-        slug: gameData.slug,
-        description: gameData.description,
-        thumbnail: gameData.thumbnail,
-        previewVideo,
-        embedPath: gameData.embedPath,
-        featured: gameData.featured,
+        title: game.title,
+        slug: game.slug,
+        description,
+        metaTitle,
+        metaDescription,
+        thumbnail,
+        embedPath: game.embed,
+        featured,
         status: GameStatus.published,
         primaryCategoryId,
         addedAt: now,
@@ -266,7 +176,7 @@ async function main() {
   }
 
   const adminPassword = await bcrypt.hash("admin123", 12);
-  const admin = await prisma.user.upsert({
+  await prisma.user.upsert({
     where: { username: "admin" },
     update: { role: Role.SUPER_ADMIN },
     create: {
@@ -306,19 +216,19 @@ async function main() {
     update: {},
     create: {
       userId: devUser.id,
-      companyName: "Pixel Forge Studio",
+      companyName: "Atelier Looks",
       revenueShare: 0.7,
-      totalRevenue: 125.5,
+      totalRevenue: 0,
     },
   });
 
   await prisma.gameUpload.create({
     data: {
       developerId: developer.id,
-      title: "Neon Jump",
-      description: "A fast-paced platformer with neon visuals.",
-      embedPath: "https://example.com/games/neon-jump",
-      thumbnail: "https://picsum.photos/seed/neon-jump/400/250",
+      title: "Closet Mix",
+      description: "A sample dress-up upload for the developer queue.",
+      embedPath: "https://example.com/games/closet-mix",
+      thumbnail: "https://picsum.photos/seed/closet-mix/400/250",
       scanStatus: "CLEAN",
     },
   });
@@ -338,25 +248,34 @@ async function main() {
           name: `${slot.name} - Default`,
           slotId: created.id,
           cpm: slot.cpm,
-          impressions: Math.floor(Math.random() * 5000) + 1000,
-          clicks: Math.floor(Math.random() * 200) + 20,
+          impressions: 0,
+          clicks: 0,
           isActive: true,
         },
       });
     }
   }
 
+  const platformValue = JSON.stringify({
+    siteName: SITE_NAME,
+    cdnUrl: "",
+    domain: "www.thedressingupgames.com",
+    featureFlags: { userRegistration: true, developerUploads: true, adsEnabled: false },
+  });
+
+  const existingPlatform = await prisma.platformSetting.findUnique({ where: { key: "platform" } });
+  if (existingPlatform?.value.includes("zenfun")) {
+    console.warn(
+      "This database still has ZenFun settings. Overwriting them. Use a NEW MySQL database — never copy the ZenFun Games database."
+    );
+  }
+
   await prisma.platformSetting.upsert({
     where: { key: "platform" },
-    update: {},
+    update: { value: platformValue },
     create: {
       key: "platform",
-      value: JSON.stringify({
-        siteName: "BrowserGames",
-        cdnUrl: "",
-        domain: "localhost:3000",
-        featureFlags: { userRegistration: true, developerUploads: true, adsEnabled: false },
-      }),
+      value: platformValue,
     },
   });
 
@@ -377,7 +296,7 @@ async function main() {
       icon: "mail",
       sortOrder: 1,
       content:
-        "Have a question, feedback, or need help with a game? We would love to hear from you.\n\nEmail us at support@zenfungames.com\n\nWe usually reply within 1–2 business days.",
+        `Have a question about a dress-up game, a broken closet, or a title we should add? Email us at ${CONTACT_EMAIL}\n\nWe usually reply within 1–2 business days.`,
     },
     {
       slug: "terms",
@@ -385,7 +304,7 @@ async function main() {
       icon: "scale",
       sortOrder: 2,
       content:
-        "Last updated: June 2026\n\nBy using ZenFun Games, you agree to these terms. Please read them carefully before playing or browsing our site.\n\nUsing our service\nYou may use ZenFun Games for personal, non-commercial entertainment. Do not attempt to disrupt the site, abuse other users, or upload harmful content.",
+        "Last updated: September 2026\n\nBy using The Dressing Up Games, you agree to these terms. Please read them before styling or browsing.\n\nUsing our service\nYou may use The Dressing Up Games for personal, non-commercial entertainment. Do not attempt to disrupt the site, abuse other users, or upload harmful content.",
     },
     {
       slug: "privacy",
@@ -393,7 +312,7 @@ async function main() {
       icon: "shield",
       sortOrder: 3,
       content:
-        "Last updated: June 2026\n\nZenFun Games respects your privacy. This policy explains what information we collect and how we use it.\n\nInformation we collect\nWe may collect basic usage data such as pages visited, games played, and cookies used to remember recently played games.",
+        "Last updated: September 2026\n\nThe Dressing Up Games respects your privacy. This policy explains what information we collect and how we use it.\n\nInformation we collect\nWe may collect basic usage data such as pages visited, games played, and cookies used to remember recently opened dress-up games.",
     },
     {
       slug: "information-for-parents",
@@ -401,7 +320,7 @@ async function main() {
       icon: "users",
       sortOrder: 4,
       content:
-        "Guidance for parents about safe, family-friendly gaming on ZenFun Games.",
+        "Guidance for parents about family-friendly dress-up, makeup, and fashion games on The Dressing Up Games.",
     },
     {
       slug: "dmca-notice",
@@ -409,21 +328,29 @@ async function main() {
       icon: "scale",
       sortOrder: 5,
       content:
-        "Digital Millennium Copyright Act notice and takedown procedures for ZenFun Games.",
+        "Digital Millennium Copyright Act notice and takedown procedures for The Dressing Up Games.",
     },
   ];
 
   for (const page of menuPages) {
     await prisma.menuPage.upsert({
       where: { slug: page.slug },
-      update: {},
+      update: {
+        title: page.title,
+        icon: page.icon,
+        sortOrder: page.sortOrder,
+        content: page.content,
+        published: true,
+      },
       create: { ...page, published: true },
     });
   }
 
-  console.log("Seed complete: 6 categories, 20 games, 5 menu pages");
+  console.log(`Seed complete: ${categories.length} categories, ${drafts.length} games, 5 menu pages`);
+  console.log(`Public contact email: ${CONTACT_EMAIL}`);
   console.log("Staff: admin/admin123 (SUPER_ADMIN), moderator/mod123456 (MODERATOR)");
   console.log("Developer: devstudio/dev123456");
+  console.log("Use a dedicated MySQL database for this site. Never point DATABASE_URL at the ZenFun Games database.");
 }
 
 main()

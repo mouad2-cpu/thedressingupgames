@@ -2,15 +2,15 @@ import type { Messages } from "../types";
 
 export const en: Messages = {
   meta: {
-    siteTitle: "Unblocked Games & Free Browser Games | ZenFun Games",
-    siteTitleTemplate: "%s | ZenFun Games",
+    siteTitle: "Unblocked Games & Free Online Games | The Dressing Up Games",
+    siteTitleTemplate: "%s | The Dressing Up Games",
     siteDescription:
-      "Play unblocked games and free HTML5 browser games instantly on ZenFun Games. No downloads — play on desktop, tablet, or mobile.",
+      "Play unblocked games and free HTML5 browser games on The Dressing Up Games. No downloads — instant play on desktop, tablet, or mobile.",
   },
   shell: {
     hideMenu: "Hide menu",
     showMenu: "Show menu",
-    homeAria: "ZenFun Games home",
+    homeAria: "The Dressing Up Games home",
     searchPlaceholder: "Search games...",
     searchAria: "Search games",
   },
@@ -126,11 +126,11 @@ export const en: Messages = {
   },
   footer: {
     tagline:
-      "Your free browser gaming hub — zero downloads, zero sign-up. Play instantly from any device, anywhere.",
+      "Unblocked games and free HTML5 browser games — play instantly on any device, no download.",
     explore: "Explore",
     legal: "Legal",
     rights: "All Rights Reserved.",
-    exploreGames: "Free Online Games",
+    exploreGames: "Unblocked Games",
     exploreAbout: "About",
     exploreContact: "Contact us",
     exploreParents: "Information for Parents",
@@ -185,7 +185,7 @@ export const en: Messages = {
       a3: 'Use the contact form, select "Game suggestion" as the topic, and tell us the game name. We review all suggestions every week.',
       q4: "How do I report inappropriate content?",
       a4: "Use the report button on any game page — it sends us the report directly. We review all content reports within 24 hours.",
-      q5: "I want to feature my game on ZenFun Games",
+      q5: "I want to feature my game on The Dressing Up Games",
       a5: "Fill in the contact form above or email us at {email} with your game URL, genre, and embed details. We'll review and respond within 3 business days.",
     },
   },

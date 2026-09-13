@@ -1,4 +1,7 @@
 import {
+  Shirt,
+  Scissors,
+  Heart,
   Zap,
   Gamepad2,
   Puzzle,
@@ -20,6 +23,9 @@ import {
 } from "lucide-react";
 
 export const CATEGORY_ICONS: Record<string, LucideIcon> = {
+  shirt: Shirt,
+  scissors: Scissors,
+  heart: Heart,
   zap: Zap,
   gamepad: Gamepad2,
   puzzle: Puzzle,
@@ -42,23 +48,22 @@ export const CATEGORY_ICONS: Record<string, LucideIcon> = {
 export const CATEGORY_ICON_PRESETS: { key: string; label: string }[] = [
   { key: "zap", label: "Action" },
   { key: "gamepad", label: "Arcade" },
-  { key: "layers", label: "Card" },
-  { key: "car", label: "Driving" },
-  { key: "users", label: "Multiplayer" },
-  { key: "crosshair", label: "Shooting" },
-  { key: "compass", label: "Adventure" },
-  { key: "crown", label: "Board" },
-  { key: "mouse-pointer", label: "Clicker" },
-  { key: "circle-dot", label: ".io" },
   { key: "puzzle", label: "Puzzle" },
-  { key: "target", label: "Simulation" },
+  { key: "car", label: "Driving" },
   { key: "trophy", label: "Sports" },
-  { key: "swords", label: "Fighting" },
-  { key: "brain", label: "Strategy" },
+  { key: "crown", label: "Strategy" },
   { key: "sparkles", label: "Casual" },
+  { key: "tag", label: "Other" },
 ];
 
 const SLUG_DEFAULT_ICONS: Record<string, string> = {
+  "dress-up": "shirt",
+  makeup: "sparkles",
+  fashion: "layers",
+  salon: "scissors",
+  princess: "crown",
+  wedding: "heart",
+  celebrity: "users",
   action: "zap",
   arcade: "gamepad",
   puzzle: "puzzle",

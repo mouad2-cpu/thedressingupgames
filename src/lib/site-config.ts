@@ -1,10 +1,13 @@
-export const CONTACT_EMAIL = "jorfmouad1@gmail.com";
+/** Public inbox for this brand only — do not reuse the ZenFun Gmail. */
+export const CONTACT_EMAIL = (
+  process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "hello@thedressingupgames.com"
+).trim();
 export const LEGAL_EMAIL = CONTACT_EMAIL;
-export const SITE_NAME = "ZenFun Games";
+export const SITE_NAME = "The Dressing Up Games";
 
 const RAW_SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
-/** Normalize production host to https://www.zenfungames.com for SEO consistency. */
+/** Normalize production host to https://www.thedressingupgames.com for SEO consistency. */
 function normalizeSiteUrl(raw: string): string {
   try {
     const url = new URL(raw);
@@ -12,8 +15,8 @@ function normalizeSiteUrl(raw: string): string {
     if (host === "localhost" || host === "127.0.0.1") {
       return url.origin.replace(/\/+$/, "");
     }
-    if (host === "zenfungames.com" || host === "www.zenfungames.com") {
-      return "https://www.zenfungames.com";
+    if (host === "thedressingupgames.com" || host === "www.thedressingupgames.com") {
+      return "https://www.thedressingupgames.com";
     }
     if (url.protocol === "http:" && !host.includes("localhost")) {
       url.protocol = "https:";
@@ -33,10 +36,10 @@ export const GA_MEASUREMENT_ID = (
 
 /** Primary brand mark used in UI, sitemap, and ImageObject structured data. */
 export const SITE_LOGO = {
-  path: "/zenfun-brand.png",
+  path: "/tdu-brand.svg",
   width: 220,
   height: 96,
-  encodingFormat: "image/png",
+  encodingFormat: "image/svg+xml",
   alt: SITE_NAME,
 } as const;
 

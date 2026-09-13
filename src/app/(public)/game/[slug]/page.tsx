@@ -20,12 +20,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const game = await getGameBySlug(slug);
   if (!game) return { title: "Game Not Found" };
 
-  const title = formatGameMetaTitle(game.title);
+  const title = game.metaTitle?.trim() || formatGameMetaTitle(game.title);
   const description = descriptionToMetaDescription(
     game.metaDescription ??
       (game.description
         ? game.description
-        : `Play ${game.title} free online on ZenFun Games — instant HTML5 browser play, no download.`)
+        : `Play ${game.title} free on The Dressing Up Games — HTML5 in your browser, no download.`)
   );
 
   return buildPageMetadata({

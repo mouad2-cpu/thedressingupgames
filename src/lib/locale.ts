@@ -7,8 +7,8 @@ export const LOCALES = {
 
 export type LocaleCode = keyof typeof LOCALES;
 
-export const LOCALE_STORAGE_KEY = "zenfun-locale";
-export const LOCALE_COOKIE = "zenfun-locale";
+export const LOCALE_STORAGE_KEY = "tdu-locale";
+export const LOCALE_COOKIE = "tdu-locale";
 
 export const LOCALE_CODES = Object.keys(LOCALES) as LocaleCode[];
 

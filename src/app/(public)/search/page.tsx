@@ -17,7 +17,7 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
       path: "/search",
       title: "Search Games",
       description:
-        "Search free online games and unblocked HTML5 browser games on ZenFun Games. Find action, puzzle, racing, sports, and more.",
+        "Search unblocked games and free HTML5 browser games on The Dressing Up Games. Find action, puzzle, racing, sports, and more.",
       index: false,
     });
   }
@@ -25,7 +25,7 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
   return buildPageMetadata({
     path: "/search",
     title: `Search: ${query}`,
-    description: `Search results for “${query}” on ZenFun Games — free online and unblocked browser games.`,
+    description: `Search results for “${query}” on The Dressing Up Games — unblocked games and free online HTML5 titles.`,
     index: false,
   });
 }

@@ -5,7 +5,7 @@ import { buildPageMetadata } from "@/lib/seo-metadata";
 export const metadata: Metadata = buildPageMetadata({
   path: "/terms-of-service",
   title: "Terms of Service",
-  description: "Terms of Service for using ZenFun Games and our free browser games.",
+  description: "Terms of Service for using The Dressing Up Games and our free unblocked browser games.",
 });
 
 export default function TermsOfServicePage() {

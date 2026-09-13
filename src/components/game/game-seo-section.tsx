@@ -52,11 +52,11 @@ export function GameSeoSection({ content }: Props) {
         </h2>
         <div className="game-seo-callouts">
           <div className="game-seo-callout game-seo-callout-tip">
-            <p className="game-seo-callout-label">Pro Tip</p>
+            <p className="game-seo-callout-label">{content.tipLabel}</p>
             <p>{content.proTip}</p>
           </div>
           <div className="game-seo-callout game-seo-callout-mistake">
-            <p className="game-seo-callout-label">Common Mistake</p>
+            <p className="game-seo-callout-label">{content.mistakeLabel}</p>
             <p>{content.commonMistake}</p>
           </div>
         </div>

@@ -1,5 +1,5 @@
 {
-  "name": "browser-games-platform",
+  "name": "the-dressing-up-games",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,6 +11,7 @@
     "db:migrate": "prisma migrate dev",
     "db:seed": "tsx prisma/seed.ts",
     "db:seed-gamesnacks-drafts": "tsx prisma/seed-gamesnacks-drafts.ts",
+    "db:seed-playhop-dressup": "tsx prisma/seed-playhop-dressup.ts",
     "db:studio": "prisma studio",
     "postinstall": "prisma generate"
   },

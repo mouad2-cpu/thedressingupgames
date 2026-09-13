@@ -1,13 +1,13 @@
 import { descriptionToMetaDescription } from "@/lib/meta-description";
+import { SITE_NAME } from "@/lib/site-config";
 
 export function getCategoryPageDescription(name: string, custom?: string | null): string {
   if (custom?.trim()) return custom.trim();
 
   const lower = name.toLowerCase();
-  return `Play free ${lower} games online in your browser. Browse ${name} titles on ZenFun Games — no download or install required.`;
+  return `Play free unblocked ${lower} games online in your browser. Browse ${name} titles on ${SITE_NAME} — HTML5 play, no download.`;
 }
 
-/** Meta-safe category description (≤160 chars). */
 export function getCategoryMetaDescription(name: string, custom?: string | null): string {
   return descriptionToMetaDescription(getCategoryPageDescription(name, custom));
 }

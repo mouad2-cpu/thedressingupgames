@@ -1,27 +1,18 @@
-# Browser Games Platform
+# The Dressing Up Games
 
-A CrazyGames-style HTML5 gaming site built with Next.js, React, TypeScript, Tailwind CSS, Prisma, and PostgreSQL.
-
-## Features
-
-- Browse featured, latest, and category-filtered games
-- Click-to-play iframe game player
-- Search by title/slug
-- User registration and JWT session auth (httpOnly cookie)
-- Game issue reporting
-- Admin panel for game CRUD and report management
+Free dress-up, makeup, and fashion games at [thedressingupgames.com](https://www.thedressingupgames.com). Same platform as the original browser-games site, with a separate brand, database, and original copy.
 
 ## Prerequisites
 
 - Node.js 20+
-- PostgreSQL
+- MySQL
 
 ## Setup
 
 1. **Install dependencies**
 
 ```bash
-cd browser-games-platform
+cd thedressingupgames
 npm install
 ```
 
@@ -31,18 +22,16 @@ npm install
 cp .env.example .env
 ```
 
-Edit `.env` with your database URL and a random `AUTH_SECRET`:
-
-```bash
-openssl rand -hex 32
-```
+Edit `.env` with a **new** MySQL database named `the_dressing_up_games` (never copy or reuse the ZenFun Games database), `NEXT_PUBLIC_SITE_URL=https://www.thedressingupgames.com`, `NEXT_PUBLIC_CONTACT_EMAIL=hello@thedressingupgames.com`, and a random `AUTH_SECRET`. Seed overwrites Contact, Terms, Privacy, Parents, and DMCA so leftover ZenFun text cannot stay.
 
 3. **Run migrations and seed**
 
 ```bash
-npx prisma migrate dev --name init
+npx prisma migrate dev
 npm run db:seed
 ```
+
+Seed creates dress-up categories (Dress Up, Makeup, Fashion, Salon, Princess, Wedding, Celebrity) and no demo action games. Add titles in the admin panel.
 
 4. **Start dev server**
 
@@ -61,18 +50,6 @@ After seeding:
 
 Change this password before going to production.
 
-## Project structure
-
-See the architecture doc for full route and folder layout. Key paths:
-
-| Path | Purpose |
-|------|---------|
-| `/` | Homepage |
-| `/game/[slug]` | Play a game |
-| `/c/[slug]` | Category listing |
-| `/search?s=` | Search |
-| `/admin` | Admin dashboard |
-
 ## Scripts
 
 | Command | Description |
@@ -80,5 +57,5 @@ See the architecture doc for full route and folder layout. Key paths:
 | `npm run dev` | Start development server |
 | `npm run build` | Production build |
 | `npm run db:migrate` | Run Prisma migrations |
-| `npm run db:seed` | Seed categories, games, admin user |
+| `npm run db:seed` | Seed categories, admin user, legal stubs |
 | `npm run db:studio` | Open Prisma Studio |

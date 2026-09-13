@@ -1,0 +1,397 @@
+{
+  "note": "Batch of 25 GameSnacks games. Upsert by slug/aliases; replace CrazyGames embeds.",
+  "games": [
+    {
+      "id": "unblockthat",
+      "title": "Unblock That",
+      "slug": "unblock-that",
+      "embed": "https://unblockthat.h5games.usercontent.goog/v/1klig9o8noje0/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=gamesnacks&userActivityMetrics=true&features=GameRendering__enforce_csp,GameRendering__support_offline_feature,InterstitialFreqCap__freq_cap_60s,Monetization__run_slotcar_ads_in_game_center",
+      "page": "https://gamesnacks.com/games/unblockthat",
+      "thumbnail": "/game-covers/unblock-that.png",
+      "coverFile": "unblock-that.png",
+      "categories": [
+        "puzzle",
+        "arcade"
+      ],
+      "aliasSlugs": [
+        "unblock-that"
+      ]
+    },
+    {
+      "id": "58et835mu1h7o",
+      "title": "Color Water Sort 3D",
+      "slug": "color-water-sort-3d",
+      "embed": "https://58et835mu1h7o.h5games.usercontent.goog/v/4ou3u2cia6qe8/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=gamesnacks&userActivityMetrics=true&features=GameRendering__enforce_csp,GameRendering__support_offline_feature,InterstitialFreqCap__freq_cap_60s,Monetization__run_slotcar_ads_in_game_center",
+      "page": "https://gamesnacks.com/games/58et835mu1h7o",
+      "thumbnail": "/game-covers/color-water-sort-3d.png",
+      "coverFile": "color-water-sort-3d.png",
+      "categories": [
+        "puzzle"
+      ],
+      "aliasSlugs": [
+        "color-water-sort-3d"
+      ]
+    },
+    {
+      "id": "findthedifference",
+      "title": "Find the Difference",
+      "slug": "find-the-difference",
+      "embed": "https://findthedifference.h5games.usercontent.goog/v/0tambv0iojsn8/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=gamesnacks&userActivityMetrics=true&features=GameRendering__enforce_csp,GameRendering__support_offline_feature,InterstitialFreqCap__freq_cap_60s,Monetization__run_slotcar_ads_in_game_center",
+      "page": "https://gamesnacks.com/games/findthedifference",
+      "thumbnail": "/game-covers/find-the-difference.png",
+      "coverFile": "find-the-difference.png",
+      "categories": [
+        "puzzle"
+      ],
+      "aliasSlugs": [
+        "find-the-difference"
+      ]
+    },
+    {
+      "id": "unparkme",
+      "title": "Unpark Me",
+      "slug": "unpark-me",
+      "embed": "https://unparkme.h5games.usercontent.goog/v/70p94l6h0dj8g/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=gamesnacks&userActivityMetrics=true&features=GameRendering__enforce_csp,GameRendering__support_offline_feature,InterstitialFreqCap__freq_cap_60s,Monetization__run_slotcar_ads_in_game_center",
+      "page": "https://gamesnacks.com/games/unparkme",
+      "thumbnail": "/game-covers/unpark-me.png",
+      "coverFile": "unpark-me.png",
+      "categories": [
+        "puzzle",
+        "racing"
+      ],
+      "aliasSlugs": [
+        "unpark-me"
+      ]
+    },
+    {
+      "id": "goldminertom",
+      "title": "Gold Miner Tom",
+      "slug": "gold-miner-tom",
+      "embed": "https://goldminertom.h5games.usercontent.goog/v/5l8d724in1pco/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=gamesnacks&userActivityMetrics=true&features=GameRendering__enforce_csp,GameRendering__support_offline_feature,InterstitialFreqCap__freq_cap_60s,Monetization__run_slotcar_ads_in_game_center",
+      "page": "https://gamesnacks.com/games/goldminertom",
+      "thumbnail": "/game-covers/gold-miner-tom.png",
+      "coverFile": "gold-miner-tom.png",
+      "categories": [
+        "arcade",
+        "action"
+      ],
+      "aliasSlugs": [
+        "gold-miner-tom"
+      ]
+    },
+    {
+      "id": "7t79nelq6lu50",
+      "title": "2048 Fusion",
+      "slug": "2048-fusion",
+      "embed": "https://7t79nelq6lu50.h5games.usercontent.goog/v/7jm0opa5dtf00/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=gamesnacks&userActivityMetrics=true&features=GameRendering__enforce_csp,GameRendering__support_offline_feature,InterstitialFreqCap__freq_cap_60s,Monetization__run_slotcar_ads_in_game_center",
+      "page": "https://gamesnacks.com/games/7t79nelq6lu50",
+      "thumbnail": "/game-covers/2048-fusion.png",
+      "coverFile": "2048-fusion.png",
+      "categories": [
+        "puzzle",
+        "arcade"
+      ],
+      "aliasSlugs": [
+        "2048-fusion"
+      ]
+    },
+    {
+      "id": "minesweepermania",
+      "title": "Minesweeper Mania",
+      "slug": "minesweeper-mania",
+      "embed": "https://minesweepermania.h5games.usercontent.goog/v/2b8gtc6lomd40/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=gamesnacks&userActivityMetrics=true&features=GameRendering__enforce_csp,GameRendering__support_offline_feature,InterstitialFreqCap__freq_cap_60s,Monetization__run_slotcar_ads_in_game_center",
+      "page": "https://gamesnacks.com/games/minesweepermania",
+      "thumbnail": "/game-covers/minesweeper-mania.png",
+      "coverFile": "minesweeper-mania.png",
+      "categories": [
+        "puzzle"
+      ],
+      "aliasSlugs": [
+        "minesweeper-mania"
+      ]
+    },
+    {
+      "id": "wordsearch",
+      "title": "Word Search",
+      "slug": "word-search",
+      "embed": "https://wordsearch.h5games.usercontent.goog/v/6abe3eefqt368/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=gamesnacks&userActivityMetrics=true&features=GameRendering__enforce_csp,GameRendering__support_offline_feature,InterstitialFreqCap__freq_cap_60s,Monetization__run_slotcar_ads_in_game_center",
+      "page": "https://gamesnacks.com/games/wordsearch",
+      "thumbnail": "/game-covers/word-search.png",
+      "coverFile": "word-search.png",
+      "categories": [
+        "puzzle"
+      ],
+      "aliasSlugs": [
+        "word-search"
+      ]
+    },
+    {
+      "id": "elementblocks",
+      "title": "Element Blocks",
+      "slug": "element-blocks",
+      "embed": "https://elementblocks.h5games.usercontent.goog/v/35up5t7ao24i8/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=gamesnacks&userActivityMetrics=true&features=GameRendering__enforce_csp,GameRendering__support_offline_feature,InterstitialFreqCap__freq_cap_60s,Monetization__run_slotcar_ads_in_game_center",
+      "page": "https://gamesnacks.com/games/elementblocks",
+      "thumbnail": "/game-covers/element-blocks.png",
+      "coverFile": "element-blocks.png",
+      "categories": [
+        "puzzle",
+        "arcade"
+      ],
+      "aliasSlugs": [
+        "element-blocks"
+      ]
+    },
+    {
+      "id": "695vevup4pmu0",
+      "title": "Bubble Shooter HD",
+      "slug": "bubble-shooter-hd",
+      "embed": "https://695vevup4pmu0.h5games.usercontent.goog/v/7ptf20o9mjr48/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=gamesnacks&userActivityMetrics=true&features=GameRendering__enforce_csp,GameRendering__support_offline_feature,InterstitialFreqCap__freq_cap_60s,Monetization__run_slotcar_ads_in_game_center",
+      "page": "https://gamesnacks.com/games/695vevup4pmu0",
+      "thumbnail": "/game-covers/bubble-shooter-hd.png",
+      "coverFile": "bubble-shooter-hd.png",
+      "categories": [
+        "arcade",
+        "puzzle"
+      ],
+      "aliasSlugs": [
+        "bubble-shooter-hd"
+      ]
+    },
+    {
+      "id": "5enjropk1ren8",
+      "title": "Bricks Breaker",
+      "slug": "bricks-breaker",
+      "embed": "https://5enjropk1ren8.h5games.usercontent.goog/v/6u5qapt4kt1j8/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=gamesnacks&userActivityMetrics=true&features=GameRendering__enforce_csp,GameRendering__support_offline_feature,InterstitialFreqCap__freq_cap_60s,Monetization__run_slotcar_ads_in_game_center",
+      "page": "https://gamesnacks.com/games/5enjropk1ren8",
+      "thumbnail": "/game-covers/bricks-breaker.png",
+      "coverFile": "bricks-breaker.png",
+      "categories": [
+        "arcade"
+      ],
+      "aliasSlugs": [
+        "bricks-breaker"
+      ]
+    },
+    {
+      "id": "spidersolitaire",
+      "title": "Spider Solitaire",
+      "slug": "spider-solitaire",
+      "embed": "https://spidersolitaire.h5games.usercontent.goog/v/4dvt7uolso62g/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=gamesnacks&userActivityMetrics=true&features=GameRendering__enforce_csp,GameRendering__support_offline_feature,InterstitialFreqCap__freq_cap_60s,Monetization__run_slotcar_ads_in_game_center",
+      "page": "https://gamesnacks.com/games/spidersolitaire",
+      "thumbnail": "/game-covers/spider-solitaire.png",
+      "coverFile": "spider-solitaire.png",
+      "categories": [
+        "puzzle"
+      ],
+      "aliasSlugs": [
+        "spider-solitaire"
+      ]
+    },
+    {
+      "id": "7nq79vktk8fho",
+      "title": "Parking Rush",
+      "slug": "parking-rush",
+      "embed": "https://7nq79vktk8fho.h5games.usercontent.goog/v/4u3a6m3hm9lj8/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=gamesnacks&userActivityMetrics=true&features=GameRendering__enforce_csp,GameRendering__support_offline_feature,InterstitialFreqCap__freq_cap_60s,Monetization__run_slotcar_ads_in_game_center",
+      "page": "https://gamesnacks.com/games/7nq79vktk8fho",
+      "thumbnail": "/game-covers/parking-rush.png",
+      "coverFile": "parking-rush.png",
+      "categories": [
+        "racing",
+        "arcade"
+      ],
+      "aliasSlugs": [
+        "parking-rush"
+      ]
+    },
+    {
+      "id": "checkerslegend",
+      "title": "Checkers Legend",
+      "slug": "checkers-legend",
+      "embed": "https://checkerslegend.h5games.usercontent.goog/v/43mkj41ari948/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=gamesnacks&userActivityMetrics=true&features=GameRendering__enforce_csp,GameRendering__support_offline_feature,InterstitialFreqCap__freq_cap_60s,Monetization__run_slotcar_ads_in_game_center",
+      "page": "https://gamesnacks.com/games/checkerslegend",
+      "thumbnail": "/game-covers/checkers-legend.png",
+      "coverFile": "checkers-legend.png",
+      "categories": [
+        "strategy",
+        "puzzle"
+      ],
+      "aliasSlugs": [
+        "checkers-legend"
+      ]
+    },
+    {
+      "id": "ginrummy",
+      "title": "Gin Rummy",
+      "slug": "gin-rummy",
+      "embed": "https://ginrummy.h5games.usercontent.goog/v/1sj72j2nsfin0/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=gamesnacks&userActivityMetrics=true&features=GameRendering__enforce_csp,GameRendering__support_offline_feature,InterstitialFreqCap__freq_cap_60s,Monetization__run_slotcar_ads_in_game_center",
+      "page": "https://gamesnacks.com/games/ginrummy",
+      "thumbnail": "/game-covers/gin-rummy.png",
+      "coverFile": "gin-rummy.png",
+      "categories": [
+        "strategy",
+        "puzzle"
+      ],
+      "aliasSlugs": [
+        "gin-rummy"
+      ]
+    },
+    {
+      "id": "slime-io",
+      "title": "Slime.io",
+      "slug": "slime-io",
+      "embed": "https://slime-io.h5games.usercontent.goog/v/3p2ufrjemduhg/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=gamesnacks&userActivityMetrics=true&features=GameRendering__enforce_csp,GameRendering__support_offline_feature,InterstitialFreqCap__freq_cap_60s,Monetization__run_slotcar_ads_in_game_center",
+      "page": "https://gamesnacks.com/games/slime-io",
+      "thumbnail": "/game-covers/slime-io.png",
+      "coverFile": "slime-io.png",
+      "categories": [
+        "action",
+        "arcade"
+      ],
+      "aliasSlugs": [
+        "slime-io"
+      ]
+    },
+    {
+      "id": "dominobattle",
+      "title": "Domino Battle",
+      "slug": "domino-battle",
+      "embed": "https://dominobattle.h5games.usercontent.goog/v/642fiqhug0uvg/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=gamesnacks&userActivityMetrics=true&features=GameRendering__enforce_csp,GameRendering__support_offline_feature,InterstitialFreqCap__freq_cap_60s,Monetization__run_slotcar_ads_in_game_center",
+      "page": "https://gamesnacks.com/games/dominobattle",
+      "thumbnail": "/game-covers/domino-battle.png",
+      "coverFile": "domino-battle.png",
+      "categories": [
+        "strategy",
+        "puzzle"
+      ],
+      "aliasSlugs": [
+        "domino-battle"
+      ]
+    },
+    {
+      "id": "blockpuzzle",
+      "title": "Hex Puzzle",
+      "slug": "hex-puzzle",
+      "embed": "https://blockpuzzle.h5games.usercontent.goog/v/3rkr8c5j9b23o/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=gamesnacks&userActivityMetrics=true&features=GameRendering__enforce_csp,GameRendering__support_offline_feature,InterstitialFreqCap__freq_cap_60s,Monetization__run_slotcar_ads_in_game_center",
+      "page": "https://gamesnacks.com/games/blockpuzzle",
+      "thumbnail": "/game-covers/hex-puzzle.png",
+      "coverFile": "hex-puzzle.png",
+      "categories": [
+        "puzzle"
+      ],
+      "aliasSlugs": [
+        "hex-puzzle"
+      ]
+    },
+    {
+      "id": "traffictom",
+      "title": "Traffic Tom",
+      "slug": "traffic-tom",
+      "embed": "https://traffictom.h5games.usercontent.goog/v/7c1a9fb2-2097-4c14-b7b1-052d80d41adb/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=gamesnacks&userActivityMetrics=true&features=GameRendering__enforce_csp,GameRendering__support_offline_feature,InterstitialFreqCap__freq_cap_60s,Monetization__run_slotcar_ads_in_game_center",
+      "page": "https://gamesnacks.com/games/traffictom",
+      "thumbnail": "/game-covers/traffic-tom.png",
+      "coverFile": "traffic-tom.png",
+      "categories": [
+        "puzzle",
+        "arcade"
+      ],
+      "aliasSlugs": [
+        "traffic-tom"
+      ]
+    },
+    {
+      "id": "4erks8385j9eo",
+      "title": "Mahjong Solitaire",
+      "slug": "mahjong-solitaire",
+      "embed": "https://4erks8385j9eo.h5games.usercontent.goog/v/1ff4p4m8ilme8/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=gamesnacks&userActivityMetrics=true&features=GameRendering__enforce_csp,GameRendering__support_offline_feature,InterstitialFreqCap__freq_cap_60s,Monetization__run_slotcar_ads_in_game_center",
+      "page": "https://gamesnacks.com/games/4erks8385j9eo",
+      "thumbnail": "/game-covers/mahjong-solitaire.png",
+      "coverFile": "mahjong-solitaire.png",
+      "categories": [
+        "puzzle"
+      ],
+      "aliasSlugs": [
+        "mahjong-solitaire",
+        "mahjongg-solitaire"
+      ]
+    },
+    {
+      "id": "dailysudoku",
+      "title": "Daily Sudoku",
+      "slug": "daily-sudoku",
+      "embed": "https://dailysudoku.h5games.usercontent.goog/v/03446732-f14b-4bcc-9e8b-68fc499a0cec/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=gamesnacks&userActivityMetrics=true&features=GameRendering__enforce_csp,GameRendering__support_offline_feature,InterstitialFreqCap__freq_cap_60s,Monetization__run_slotcar_ads_in_game_center",
+      "page": "https://gamesnacks.com/games/dailysudoku",
+      "thumbnail": "/game-covers/daily-sudoku.png",
+      "coverFile": "daily-sudoku.png",
+      "categories": [
+        "puzzle"
+      ],
+      "aliasSlugs": [
+        "daily-sudoku"
+      ]
+    },
+    {
+      "id": "smartybubbles",
+      "title": "Smarty Bubbles",
+      "slug": "smarty-bubbles",
+      "embed": "https://smartybubbles.h5games.usercontent.goog/v/09fhbor6rfpv0/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=gamesnacks&userActivityMetrics=true&features=GameRendering__enforce_csp,GameRendering__support_offline_feature,InterstitialFreqCap__freq_cap_60s,Monetization__run_slotcar_ads_in_game_center",
+      "page": "https://gamesnacks.com/games/smartybubbles",
+      "thumbnail": "/game-covers/smarty-bubbles.png",
+      "coverFile": "smarty-bubbles.png",
+      "categories": [
+        "arcade",
+        "puzzle"
+      ],
+      "aliasSlugs": [
+        "smarty-bubbles"
+      ]
+    },
+    {
+      "id": "5d5aakq3nhaj8",
+      "title": "Fun Race 3D",
+      "slug": "fun-race-3d",
+      "embed": "https://5d5aakq3nhaj8.h5games.usercontent.goog/v/2eau00dhrqrro/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=gamesnacks&userActivityMetrics=true&features=GameRendering__enforce_csp,GameRendering__support_offline_feature,InterstitialFreqCap__freq_cap_60s,Monetization__run_slotcar_ads_in_game_center",
+      "page": "https://gamesnacks.com/games/5d5aakq3nhaj8",
+      "thumbnail": "/game-covers/fun-race-3d.png",
+      "coverFile": "fun-race-3d.png",
+      "categories": [
+        "racing",
+        "arcade"
+      ],
+      "aliasSlugs": [
+        "fun-race-3d"
+      ]
+    },
+    {
+      "id": "towercrash3d",
+      "title": "Tower Crash 3D",
+      "slug": "tower-crash-3d",
+      "embed": "https://towercrash3d.h5games.usercontent.goog/v/7c54afc1-3ca4-4121-a52a-9ea74e30f0d7/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=gamesnacks&userActivityMetrics=true&features=GameRendering__enforce_csp,GameRendering__support_offline_feature,InterstitialFreqCap__freq_cap_60s,Monetization__run_slotcar_ads_in_game_center",
+      "page": "https://gamesnacks.com/games/towercrash3d",
+      "thumbnail": "/game-covers/tower-crash-3d.png",
+      "coverFile": "tower-crash-3d.png",
+      "categories": [
+        "arcade",
+        "action"
+      ],
+      "aliasSlugs": [
+        "tower-crash-3d"
+      ]
+    },
+    {
+      "id": "3eq3pd4fpqal0",
+      "title": "Bouncemasters",
+      "slug": "bouncemasters",
+      "embed": "https://3eq3pd4fpqal0.h5games.usercontent.goog/v/1k13nb2q2q9q0/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=gamesnacks&userActivityMetrics=true&features=GameRendering__enforce_csp,GameRendering__support_offline_feature,InterstitialFreqCap__freq_cap_60s,Monetization__run_slotcar_ads_in_game_center",
+      "page": "https://gamesnacks.com/games/3eq3pd4fpqal0",
+      "thumbnail": "/game-covers/bouncemasters.png",
+      "coverFile": "bouncemasters.png",
+      "categories": [
+        "arcade",
+        "action"
+      ],
+      "aliasSlugs": [
+        "bouncemasters"
+      ]
+    }
+  ]
+}

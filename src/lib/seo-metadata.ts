@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SITE_HOME_PRIMARY_IMAGE, SITE_LOGO, SITE_NAME } from "@/lib/site-config";
 import { absoluteUrl } from "@/lib/structured-data/urls";
 import { descriptionToMetaDescription } from "@/lib/meta-description";
+import { formatUnblockedGameMetaTitle } from "@/lib/unblocked-game-seo";
 
 export function parsePageNumber(pageParam?: string): number {
   return Math.max(1, parseInt(pageParam ?? "1", 10) || 1);
@@ -35,13 +36,13 @@ type BuildPageMetadataOptions = {
   follow?: boolean;
   /** Open Graph / Twitter title (defaults to `title`). */
   ogTitle?: string;
-  /** Skip the root layout title template (e.g. `| ZenFun Games`). */
+  /** Skip the root layout title template (e.g. `| The Dressing Up Games`). */
   absoluteTitle?: boolean;
 };
 
-/** Game page `<title>` / OG title: `{Name} Unblocked ⚡ Play Free` */
+/** Game page `<title>` / OG title: `{Name} Unblocked – Play Free Online` */
 export function formatGameMetaTitle(gameTitle: string): string {
-  return `${gameTitle} Unblocked ⚡ Play Free`;
+  return formatUnblockedGameMetaTitle(gameTitle);
 }
 
 /** Shared HTML metadata: canonical, robots, Open Graph, Twitter. */
@@ -120,32 +121,32 @@ export function buildCollectionPageMetadata(options: {
 export const LIST_PAGE_META = {
   popular: {
     path: "/popular",
-    title: "Popular Unblocked Games & Free Online Games",
+    title: "Popular Unblocked Games",
     description:
-      "Play the most popular unblocked games and free online browser games on ZenFun Games. Instant HTML5 play with no downloads — desktop, tablet, or mobile.",
+      "The most-played unblocked games and free HTML5 browser games on The Dressing Up Games. Instant play, no download — desktop, tablet, or mobile.",
   },
   new: {
     path: "/new",
-    title: "New Unblocked Games & Free Online Games",
+    title: "New Unblocked Games",
     description:
-      "Discover the newest free online games and unblocked HTML5 browser games on ZenFun Games. Play instantly — no downloads required.",
+      "Fresh unblocked games and new free online HTML5 titles on The Dressing Up Games. Play in your browser with no install.",
   },
   "all-games": {
     path: "/all-games",
-    title: "All Free Online Games & Unblocked Browser Games",
+    title: "All Unblocked Games & Free Online Games",
     description:
-      "Browse the full catalog of free online games and unblocked HTML5 browser games on ZenFun Games. Play instantly on any device.",
+      "The full unblocked games catalog on The Dressing Up Games — action, puzzle, racing, sports, arcade, and strategy HTML5 games. Play free on any device.",
   },
   "top-picks": {
     path: "/top-picks",
-    title: "Top Picks — Free Online Games",
+    title: "Top Unblocked Games Picks",
     description:
-      "Recommended free online games and unblocked browser games on ZenFun Games. A curated mix of popular and featured HTML5 titles.",
+      "A shortlist of unblocked browser games on The Dressing Up Games — featured HTML5 titles mixed with popular free online games.",
   },
   "continue-playing": {
     path: "/continue-playing",
-    title: "Continue Playing",
+    title: "Continue Playing Unblocked Games",
     description:
-      "Resume free online games you recently played on ZenFun Games. Jump back into your HTML5 browser favorites instantly.",
+      "Resume unblocked games you recently opened on The Dressing Up Games. Jump back into free HTML5 browser titles instantly.",
   },
 } as const;

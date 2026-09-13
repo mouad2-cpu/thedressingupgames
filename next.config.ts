@@ -11,8 +11,8 @@ const nextConfig: NextConfig = {
       { source: "/privacy", destination: "/privacy-policy", permanent: true },
       {
         source: "/:path*",
-        has: [{ type: "host", value: "zenfungames.com" }],
-        destination: "https://www.zenfungames.com/:path*",
+        has: [{ type: "host", value: "thedressingupgames.com" }],
+        destination: "https://www.thedressingupgames.com/:path*",
         permanent: true,
       },
     ];

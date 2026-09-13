@@ -2,15 +2,15 @@ import type { Messages } from "../types";
 
 export const nl: Messages = {
   meta: {
-    siteTitle: "Speel gratis browsergames online",
-    siteTitleTemplate: "%s | Browsergames",
+    siteTitle: "Unblocked games en gratis online games | The Dressing Up Games",
+    siteTitleTemplate: "%s | The Dressing Up Games",
     siteDescription:
-      "Speel unblocked games en gratis HTML5-browsergames direct op {siteName}. Geen downloads — op desktop, tablet of mobiel.",
+      "Speel unblocked games en gratis HTML5-browsergames op {siteName}. Geen downloads — op desktop, tablet of mobiel.",
   },
   shell: {
     hideMenu: "Menu verbergen",
     showMenu: "Menu tonen",
-    homeAria: "ZenFun Games startpagina",
+    homeAria: "The Dressing Up Games startpagina",
     searchPlaceholder: "Games zoeken...",
     searchAria: "Games zoeken",
   },
@@ -74,7 +74,7 @@ export const nl: Messages = {
     genericError: "Er ging iets mis. Probeer het opnieuw.",
   },
   home: {
-    heading: "Gratis browsergames",
+    heading: "Unblocked games",
     continuePlaying: "Verder spelen",
     topPicks: "Topkeuzes voor jou",
     featuredGames: "Uitgelichte games",
@@ -126,11 +126,11 @@ export const nl: Messages = {
   },
   footer: {
     tagline:
-      "Jouw gratis browsergame-hub — geen downloads, geen aanmelding. Speel direct op elk apparaat, overal.",
+      "Unblocked games en gratis HTML5-browsergames — speel direct op elk apparaat, zonder download.",
     explore: "Ontdekken",
     legal: "Juridisch",
     rights: "Alle rechten voorbehouden.",
-    exploreGames: "Gratis online games",
+    exploreGames: "Unblocked games",
     exploreAbout: "Over ons",
     exploreContact: "Contact",
     exploreParents: "Informatie voor ouders",
@@ -185,7 +185,7 @@ export const nl: Messages = {
       a3: 'Gebruik het contactformulier, kies "Gamesuggestie" als onderwerp en noem de gamenaam. We bekijken alle suggesties wekelijks.',
       q4: "Hoe meld ik ongepaste inhoud?",
       a4: "Gebruik de rapporteerknop op elke gamepagina — die stuurt het rapport direct naar ons. We bekijken alle meldingen binnen 24 uur.",
-      q5: "Ik wil mijn game op ZenFun Games uitlichten",
+      q5: "Ik wil mijn game op The Dressing Up Games uitlichten",
       a5: "Vul het contactformulier in of mail ons op {email} met je game-URL, genre en embed-details. We beoordelen en reageren binnen 3 werkdagen.",
     },
   },

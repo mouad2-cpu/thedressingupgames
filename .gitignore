@@ -44,4 +44,6 @@ next-env.d.ts
 
 # local migrate artifacts / secrets (never commit)
 /_migrate/
+/_preview/
+scripts/playhop-play-report.json
 src/app/favicon-temp.png

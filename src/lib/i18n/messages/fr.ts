@@ -2,15 +2,15 @@ import type { Messages } from "../types";
 
 export const fr: Messages = {
   meta: {
-    siteTitle: "Jouez à des jeux navigateur gratuits",
-    siteTitleTemplate: "%s | Jeux navigateur",
+    siteTitle: "Jeux débloqués et jeux en ligne gratuits | The Dressing Up Games",
+    siteTitleTemplate: "%s | The Dressing Up Games",
     siteDescription:
-      "Jouez à des jeux débloqués et jeux HTML5 gratuits instantanément sur {siteName}. Sans téléchargement — PC, tablette ou mobile.",
+      "Jouez à des jeux débloqués et jeux HTML5 gratuits sur {siteName}. Sans téléchargement — PC, tablette ou mobile.",
   },
   shell: {
     hideMenu: "Masquer le menu",
     showMenu: "Afficher le menu",
-    homeAria: "Accueil ZenFun Games",
+    homeAria: "Accueil The Dressing Up Games",
     searchPlaceholder: "Rechercher des jeux...",
     searchAria: "Rechercher des jeux",
   },
@@ -74,7 +74,7 @@ export const fr: Messages = {
     genericError: "Une erreur s'est produite. Réessayez.",
   },
   home: {
-    heading: "Jeux navigateur gratuits",
+    heading: "Jeux débloqués",
     continuePlaying: "Continuer à jouer",
     topPicks: "Sélection pour vous",
     featuredGames: "Jeux en vedette",
@@ -126,11 +126,11 @@ export const fr: Messages = {
   },
   footer: {
     tagline:
-      "Votre hub de jeux navigateur gratuits — sans téléchargement ni inscription. Jouez instantanément sur tout appareil.",
+      "Jeux débloqués et jeux HTML5 gratuits dans le navigateur — jouez instantanément sur tout appareil, sans téléchargement.",
     explore: "Explorer",
     legal: "Mentions légales",
     rights: "Tous droits réservés.",
-    exploreGames: "Jeux en ligne gratuits",
+    exploreGames: "Jeux débloqués",
     exploreAbout: "À propos",
     exploreContact: "Nous contacter",
     exploreParents: "Informations pour les parents",
@@ -185,7 +185,7 @@ export const fr: Messages = {
       a3: 'Utilisez le formulaire de contact, choisissez « Suggestion de jeu » comme sujet et indiquez le nom du jeu. Nous examinons toutes les suggestions chaque semaine.',
       q4: "Comment signaler un contenu inapproprié ?",
       a4: "Utilisez le bouton de signalement sur n'importe quelle page de jeu — cela nous envoie le rapport directement. Nous examinons tous les signalements sous 24 heures.",
-      q5: "Je souhaite mettre mon jeu en avant sur ZenFun Games",
+      q5: "Je souhaite mettre mon jeu en avant sur The Dressing Up Games",
       a5: "Remplissez le formulaire de contact ou écrivez-nous à {email} avec l'URL de votre jeu, le genre et les détails d'intégration. Nous examinons et répondons sous 3 jours ouvrés.",
     },
   },

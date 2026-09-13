@@ -6,7 +6,7 @@ export const metadata: Metadata = buildPageMetadata({
   path: "/about",
   title: "About Us",
   description:
-    "Learn about ZenFun Games — free online browser games with no downloads, instant play, and new titles added regularly.",
+    "Learn about The Dressing Up Games — unblocked games and free HTML5 browser games with no downloads.",
 });
 
 export default function AboutPage() {

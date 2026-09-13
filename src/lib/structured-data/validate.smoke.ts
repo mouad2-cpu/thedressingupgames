@@ -26,7 +26,7 @@ function findByType(graph: ReturnType<typeof buildHomePageGraph>["@graph"], type
 
 const home = buildHomePageGraph({
   name: "Play Free Browser Games Online",
-  description: "ZenFun Games features free online browser games.",
+  description: "The Dressing Up Games features free unblocked HTML5 browser games.",
   featuredGames: [
     { name: "Game A", path: "/game/a" },
     { name: "Game B", path: "/game/b" },

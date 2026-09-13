@@ -124,7 +124,7 @@ export async function buildImagesSitemapXml(chunk = 0): Promise<string> {
           caption: `${SITE_LOGO.alt} logo`,
         },
         {
-          loc: "/zenfun-icon.png",
+          loc: "/tdu-icon.svg",
           title: SITE_LOGO.alt,
           caption: `${SITE_LOGO.alt} icon`,
         },

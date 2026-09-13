@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { SITE_NAME } from "@/lib/site-config";
+import { SITE_LOGO, SITE_NAME } from "@/lib/site-config";
 import { useLanguage } from "./language-provider";
 import "./site-footer.css";
 
@@ -34,10 +34,10 @@ export function SiteFooter() {
         <div className="site-footer-brand">
           <Link href="/" className="site-footer-logo" aria-label={t("shell.homeAria")}>
             <Image
-              src="/zenfun-brand.png"
+              src={SITE_LOGO.path}
               alt={SITE_NAME}
-              width={220}
-              height={96}
+              width={SITE_LOGO.width}
+              height={SITE_LOGO.height}
               unoptimized
               className="h-[88px] w-auto object-contain sm:h-[96px]"
             />

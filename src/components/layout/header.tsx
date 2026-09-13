@@ -22,7 +22,7 @@ export async function Header() {
           href="/"
           className="shrink-0 text-xl font-bold tracking-tight text-[var(--color-accent)]"
         >
-          BrowserGames
+          The Dressing Up Games
         </Link>
 
         <form action="/search" method="GET" className="mx-auto hidden max-w-md flex-1 sm:block">

@@ -2,15 +2,15 @@ import type { Messages } from "../types";
 
 export const es: Messages = {
   meta: {
-    siteTitle: "Juega juegos gratis en el navegador",
-    siteTitleTemplate: "%s | Juegos de navegador",
+    siteTitle: "Juegos desbloqueados y juegos online gratis | The Dressing Up Games",
+    siteTitleTemplate: "%s | The Dressing Up Games",
     siteDescription:
-      "Juega juegos desbloqueados y juegos HTML5 gratis al instante en {siteName}. Sin descargas — en ordenador, tablet o móvil.",
+      "Juega juegos desbloqueados y juegos HTML5 gratis en el navegador en {siteName}. Sin descargas — en ordenador, tablet o móvil.",
   },
   shell: {
     hideMenu: "Ocultar menú",
     showMenu: "Mostrar menú",
-    homeAria: "Inicio de ZenFun Games",
+    homeAria: "Inicio de The Dressing Up Games",
     searchPlaceholder: "Buscar juegos...",
     searchAria: "Buscar juegos",
   },
@@ -74,7 +74,7 @@ export const es: Messages = {
     genericError: "Algo salió mal. Inténtalo de nuevo.",
   },
   home: {
-    heading: "Juegos gratis en el navegador",
+    heading: "Juegos desbloqueados",
     continuePlaying: "Seguir jugando",
     topPicks: "Mejores para ti",
     featuredGames: "Juegos destacados",
@@ -126,11 +126,11 @@ export const es: Messages = {
   },
   footer: {
     tagline:
-      "Tu centro de juegos gratis en el navegador: sin descargas ni registro. Juega al instante desde cualquier dispositivo.",
+      "Juegos desbloqueados y juegos HTML5 gratis en el navegador: juega al instante en cualquier dispositivo, sin descargas.",
     explore: "Explorar",
     legal: "Legal",
     rights: "Todos los derechos reservados.",
-    exploreGames: "Juegos online gratis",
+    exploreGames: "Juegos desbloqueados",
     exploreAbout: "Acerca de",
     exploreContact: "Contáctanos",
     exploreParents: "Información para padres",
@@ -185,7 +185,7 @@ export const es: Messages = {
       a3: 'Usa el formulario de contacto, elige "Sugerencia de juego" como tema e indica el nombre del juego. Revisamos todas las sugerencias cada semana.',
       q4: "¿Cómo reporto contenido inapropiado?",
       a4: "Usa el botón de informe en cualquier página de juego — nos envía el reporte directamente. Revisamos todos los reportes en 24 horas.",
-      q5: "Quiero publicar mi juego en ZenFun Games",
+      q5: "Quiero publicar mi juego en The Dressing Up Games",
       a5: "Completa el formulario de contacto o escríbenos a {email} con la URL del juego, género y detalles de integración. Revisamos y respondemos en 3 días laborables.",
     },
   },

@@ -1,0 +1,278 @@
+{
+  "note": "39 AddictingGames HTML5 games. Upsert by slug/aliases/title; SEO same as batch25; new = draft.",
+  "games": [
+    {
+      "title": "The Impossible Quiz",
+      "slug": "the-impossible-quiz",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/theimpossiblequiz/index.html",
+      "categories": ["puzzle", "arcade"],
+      "aliasSlugs": ["impossible-quiz", "theimpossiblequiz"]
+    },
+    {
+      "title": "Bloons Tower Defense 4",
+      "slug": "bloons-tower-defense-4",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/bloonstowerdefense4/index.html",
+      "categories": ["strategy", "arcade"],
+      "aliasSlugs": ["bloons-td-4", "btd4", "bloons-td4"]
+    },
+    {
+      "title": "Age of War",
+      "slug": "age-of-war",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/ageofwar/index.html",
+      "categories": ["strategy", "action"],
+      "aliasSlugs": ["ageofwar"]
+    },
+    {
+      "title": "Slope Xtreme",
+      "slug": "slope-xtreme",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/slopextreme/index.html",
+      "categories": ["arcade", "racing"],
+      "aliasSlugs": ["slope-extreme", "slopextreme"]
+    },
+    {
+      "title": "Mahjongg",
+      "slug": "mahjongg",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/mahjongg/index.html",
+      "categories": ["puzzle"],
+      "aliasSlugs": ["mahjongg-addicting", "mahjong-classic"]
+    },
+    {
+      "title": "Pandemic 2",
+      "slug": "pandemic-2",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/pandemic2/index.html",
+      "categories": ["strategy"],
+      "aliasSlugs": ["pandemic2"]
+    },
+    {
+      "title": "8 Ball Billiards Classic",
+      "slug": "8-ball-billiards-classic",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/8-ball-billiards-classic/index.html",
+      "categories": ["sports", "arcade"],
+      "aliasSlugs": ["8-ball-billiards", "eight-ball-billiards"]
+    },
+    {
+      "title": "Helicopter Game",
+      "slug": "helicopter-game",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/helicoptergame/index.html",
+      "categories": ["arcade", "action"],
+      "aliasSlugs": ["helicopter", "helicoptergame"]
+    },
+    {
+      "title": "Subway Runner",
+      "slug": "subway-runner",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/subway-runner/index.html",
+      "categories": ["arcade", "action"],
+      "aliasSlugs": ["subwayrunner"]
+    },
+    {
+      "title": "Mini Putt",
+      "slug": "mini-putt",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/miniputt/index.html",
+      "categories": ["sports", "arcade"],
+      "aliasSlugs": ["miniputt"]
+    },
+    {
+      "title": "Bubble Spinner",
+      "slug": "bubble-spinner",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/bubblespinner/index.html",
+      "categories": ["puzzle", "arcade"],
+      "aliasSlugs": ["bubblespinner"]
+    },
+    {
+      "title": "Stickman Swing",
+      "slug": "stickman-swing",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/stickman-swing/index.html",
+      "categories": ["arcade", "action"],
+      "aliasSlugs": ["stickmanswing"]
+    },
+    {
+      "title": "Bloons",
+      "slug": "bloons",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/bloons/index.html",
+      "categories": ["arcade", "action"],
+      "aliasSlugs": []
+    },
+    {
+      "title": "Max Dirt Bike",
+      "slug": "max-dirt-bike",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/maxdirtbike/index.html",
+      "categories": ["racing", "arcade"],
+      "aliasSlugs": ["maxdirtbike"]
+    },
+    {
+      "title": "Stunt Dirt Bike",
+      "slug": "stunt-dirt-bike",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/stuntdirtbike/index.html",
+      "categories": ["racing", "arcade"],
+      "aliasSlugs": ["stuntdirtbike"]
+    },
+    {
+      "title": "Kitten Cannon",
+      "slug": "kitten-cannon",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/kittencannon/index.html",
+      "categories": ["arcade", "action"],
+      "aliasSlugs": ["kittencannon"]
+    },
+    {
+      "title": "Stick Running",
+      "slug": "stick-running",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/stick-running/index.html",
+      "categories": ["arcade", "action"],
+      "aliasSlugs": ["stickrunning"]
+    },
+    {
+      "title": "2048 Legend",
+      "slug": "2048-legend",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/2048-legend/index.html",
+      "categories": ["puzzle"],
+      "aliasSlugs": ["2048legend"]
+    },
+    {
+      "title": "2048 City",
+      "slug": "2048-city",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/2048-city/index.html",
+      "categories": ["puzzle"],
+      "aliasSlugs": ["2048city"]
+    },
+    {
+      "title": "Circus Hidden Differences",
+      "slug": "circus-hidden-differences",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/circus-hidden-differences/index.html",
+      "categories": ["puzzle"],
+      "aliasSlugs": ["circus-find-the-difference"]
+    },
+    {
+      "title": "Link It Up",
+      "slug": "link-it-up",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/link-it-up/index.html",
+      "categories": ["puzzle"],
+      "aliasSlugs": ["linkitup"]
+    },
+    {
+      "title": "Blockbuster Jewel Quest",
+      "slug": "blockbuster-jewel-quest",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/block-buster-jewel-quest/index.html",
+      "categories": ["puzzle"],
+      "aliasSlugs": ["block-buster-jewel-quest", "jewel-quest"]
+    },
+    {
+      "title": "Color Pixel Art Classic",
+      "slug": "color-pixel-art-classic",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/color-pixel-art-classic/index.html",
+      "categories": ["puzzle"],
+      "aliasSlugs": ["color-pixel-art"]
+    },
+    {
+      "title": "50 States",
+      "slug": "50-states",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/50states/index.html",
+      "categories": ["puzzle"],
+      "aliasSlugs": ["fifty-states", "50states"]
+    },
+    {
+      "title": "Misspelled",
+      "slug": "misspelled",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/misspelled/index.html",
+      "categories": ["puzzle"],
+      "aliasSlugs": []
+    },
+    {
+      "title": "Getaway Driver 3D",
+      "slug": "getaway-driver-3d",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/getaway-driver-3d/index.html",
+      "categories": ["racing", "action"],
+      "aliasSlugs": ["getaway-driver"]
+    },
+    {
+      "title": "Car Eats Car: Volcanic Adventure",
+      "slug": "car-eats-car-volcanic-adventure",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/car-eats-car-volcanic-adventure/index.html",
+      "categories": ["racing", "action"],
+      "aliasSlugs": ["car-eats-car", "car-eats-car-volcanic"]
+    },
+    {
+      "title": "Street Driver",
+      "slug": "street-driver",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/street-driver/index.html",
+      "categories": ["racing"],
+      "aliasSlugs": ["streetdriver"]
+    },
+    {
+      "title": "Rally Point",
+      "slug": "rally-point",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/rally-point-4/index.html",
+      "categories": ["racing"],
+      "aliasSlugs": ["rally-point-4", "rallypoint"]
+    },
+    {
+      "title": "Wasteland Trucker",
+      "slug": "wasteland-trucker",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/wasteland-trucker/index.html",
+      "categories": ["racing", "action"],
+      "aliasSlugs": ["wastelandtrucker"]
+    },
+    {
+      "title": "Zombie Road",
+      "slug": "zombie-road",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/zombie-road/index.html",
+      "categories": ["racing", "action"],
+      "aliasSlugs": ["zombieroad"]
+    },
+    {
+      "title": "Tower Trouble",
+      "slug": "tower-trouble",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/tower-trouble/index.html",
+      "categories": ["puzzle", "arcade"],
+      "aliasSlugs": ["towertrouble"]
+    },
+    {
+      "title": "Jurassic Run",
+      "slug": "jurassic-run",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/jurassic-run/index.html",
+      "categories": ["arcade", "action"],
+      "aliasSlugs": ["jurassicrun"]
+    },
+    {
+      "title": "Stickman Archery",
+      "slug": "stickman-archery",
+      "embed": "https://cdn3.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/stickman-archery/index.html",
+      "categories": ["sports", "action"],
+      "aliasSlugs": ["stickmanarchery"]
+    },
+    {
+      "title": "3D Bowling",
+      "slug": "3d-bowling",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/3d-bowling/index.html",
+      "categories": ["sports", "arcade"],
+      "aliasSlugs": ["bowling-3d", "3dbowling"]
+    },
+    {
+      "title": "Addicting Draughts",
+      "slug": "addicting-draughts",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/draughts/index.html",
+      "categories": ["strategy", "puzzle"],
+      "aliasSlugs": ["draughts", "addicting-checkers"]
+    },
+    {
+      "title": "A Nonogram a Day",
+      "slug": "a-nonogram-a-day",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/a-nonogram-a-day/index.html",
+      "categories": ["puzzle"],
+      "aliasSlugs": ["nonogram-a-day"]
+    },
+    {
+      "title": "10 Mahjong",
+      "slug": "10-mahjong",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/10-mahjong/index.html",
+      "categories": ["puzzle"],
+      "aliasSlugs": ["10mahjong"]
+    },
+    {
+      "title": "1010 Bricks",
+      "slug": "1010-bricks",
+      "embed": "https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/1010-bricks/index.html",
+      "categories": ["puzzle", "arcade"],
+      "aliasSlugs": ["1010bricks"]
+    }
+  ]
+}

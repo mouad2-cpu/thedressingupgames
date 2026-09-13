@@ -8,15 +8,14 @@ function parentsPageEn(): ReactNode {
     <>
       <h2>🧩 Information for Parents – Safe, Simple, and Fun for Everyone</h2>
       <p>
-        At {SITE_NAME}, we know how important it is for parents to feel confident about what their
-        children play online.
+        At {SITE_NAME}, we know parents want to understand what their children open in a browser. This site is built around unblocked HTML5 games you play in a tab — no installer, no account wall.
       </p>
       <p>
-        As gamers ourselves — and many of us parents too — we built this platform with one clear
+        As people who grew up on browser games — and many of us parents too — we built this site with one clear
         goal in mind:
       </p>
       <p className="parents-page-highlight">
-        👉 To make free online gaming safe, fun, and family-friendly.
+        👉 To keep free unblocked games easy to open, and family-friendly where we can.
       </p>
       <p>
         We believe kids should enjoy the excitement of games while learning, thinking creatively,

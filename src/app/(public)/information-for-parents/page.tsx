@@ -6,7 +6,7 @@ export const metadata: Metadata = buildPageMetadata({
   path: "/information-for-parents",
   title: "Information for Parents",
   description:
-    "Learn how ZenFun Games keeps online gaming safe, fun, and family-friendly for children and parents.",
+    "How The Dressing Up Games approaches family-friendly unblocked games for children and parents.",
 });
 
 export default function InformationForParentsPage() {

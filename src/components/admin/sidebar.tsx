@@ -15,7 +15,7 @@ export function AdminSidebar({ currentPath, role, username }: Props) {
     <aside className="flex w-60 shrink-0 flex-col border-r border-[var(--color-border)] bg-[var(--color-surface)]">
       <div className="border-b border-[var(--color-border)] p-4">
         <Link href="/" className="text-sm font-bold text-[var(--color-accent)]">
-          BrowserGames
+          The Dressing Up Games
         </Link>
         <p className="mt-1 text-xs text-[var(--color-muted)]">Control Center</p>
         <p className="mt-2 truncate text-xs text-[var(--color-text)]">

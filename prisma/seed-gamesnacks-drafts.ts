@@ -1,5 +1,5 @@
 /**
- * Insert GameSnacks games as DRAFT (not published) with SEO fields + local covers.
+ * Insert GameSnacks games as published unblocked titles with unique SEO fields.
  * Run: npm run db:seed-gamesnacks-drafts
  */
 import { readFileSync } from "fs";
@@ -7,6 +7,10 @@ import path from "path";
 import { PrismaClient, GameStatus } from "@prisma/client";
 import { descriptionToMetaDescription } from "../src/lib/meta-description";
 import { SITE_NAME } from "../src/lib/site-config";
+import {
+  buildUnblockedGameDescription,
+  formatUnblockedGameMetaTitle,
+} from "../src/lib/unblocked-game-seo";
 
 const prisma = new PrismaClient();
 
@@ -29,28 +33,6 @@ type DraftGame = {
 };
 
 type DraftFile = { games: DraftGame[] };
-
-function seoDescription(title: string, genre: string): string {
-  return [
-    `**Play ${title} free online** on ${SITE_NAME}. Jump into this free HTML5 ${genre} browser game instantly — no download, no install, and no sign-up required.`,
-    `${title} runs in your browser on desktop, Chromebook, tablet, and mobile. Open the game page, hit play, and start in seconds.`,
-    `## How to play ${title}`,
-    `- Click play to load ${title} and follow any on-screen tutorial or control hints.`,
-    `- Use your keyboard, mouse, or touch controls to move, aim, or interact with the game.`,
-    `- Complete levels, beat objectives, or chase a higher score to progress.`,
-    `- Retry after a fail, improve your timing, and push for a cleaner run.`,
-    `## Why play ${title} on ${SITE_NAME}`,
-    `- Free to play in your browser with no download`,
-    `- Works on desktop, tablet, and mobile`,
-    `- Instant load — great for quick sessions`,
-    `- Easy to find when you search **${title} unblocked** or **play ${title} free online**`,
-    `Search for **${title} unblocked**, **${title} free online**, or **play ${title}** and jump straight into the action on ${SITE_NAME}.`,
-  ].join("\n\n");
-}
-
-function metaTitleFor(title: string): string {
-  return `${title} Unblocked ⚡ Play Free`;
-}
 
 async function main() {
   const filePath = path.join(__dirname, "gamesnacks-drafts.json");
@@ -75,8 +57,8 @@ async function main() {
     }
 
     const genre = GENRE_LABEL[primarySlug] ?? "browser";
-    const description = seoDescription(game.title, genre);
-    const metaTitle = metaTitleFor(game.title);
+    const description = buildUnblockedGameDescription(game.title, genre, SITE_NAME);
+    const metaTitle = formatUnblockedGameMetaTitle(game.title);
     const metaDescription = descriptionToMetaDescription(description);
     const thumbnail = game.thumbnail?.startsWith("/")
       ? game.thumbnail
@@ -94,9 +76,7 @@ async function main() {
         thumbnail,
         embedPath: game.embed,
         primaryCategoryId,
-        ...(existing?.status === GameStatus.published
-          ? {}
-          : { status: GameStatus.draft }),
+        status: GameStatus.published,
       },
       create: {
         title: game.title,
@@ -107,7 +87,7 @@ async function main() {
         thumbnail,
         embedPath: game.embed,
         featured: false,
-        status: GameStatus.draft,
+        status: GameStatus.published,
         primaryCategoryId,
         addedAt: new Date(),
       },

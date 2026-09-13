@@ -1,34 +1,34 @@
 export const HOME_SEO_CONTENT = {
-  eyebrow: "About ZenFunGames",
+  eyebrow: "About The Dressing Up Games",
   sections: [
     {
       id: "unblocked-games",
       title: "Unblocked Games",
       paragraphs: [
-        "ZenFunGames brings you one of the best collections of Unblocked Games, Free Online Games, Browser Games, and Free Games. Play instantly without downloads, installations, or registration. Every game runs directly in your browser on PC, mobile, and tablet, so you can enjoy gaming anywhere. Our platform focuses on fast loading, smooth gameplay, and a growing library of fun games for every type of player.",
+        "The Dressing Up Games is a free hub for Unblocked Games, Browser Games, and Instant Games. Open a title in your tab and play without an installer or an account. Every game is HTML5, so it runs on PC, Chromebook, phone, and tablet. We keep the library focused on quick loads and a growing mix of action, puzzles, racing, sports, arcade, and strategy.",
       ],
     },
     {
       id: "play-games-online",
       title: "Play Games Online",
       paragraphs: [
-        "Looking for the easiest way to Play Games Online? ZenFunGames offers Instant Games powered by modern HTML5 technology. Open your favorite game and start playing in seconds. No Download Games mean you save storage space while enjoying a seamless experience across desktop and mobile devices. Whether you are at home, school, or work, you can access thousands of Browser Games with a single click.",
+        "If you want to Play Games Online without filling your storage, this is a No Download Games site. Click play, wait for the HTML5 build, and you are in. That is how unblocked play works when a normal website still opens — at home, at school, or at work, depending on the network filter.",
       ],
     },
     {
       id: "explore-categories",
       title: "Explore Every Game Category",
       paragraphs: [
-        "Discover games for every mood and every age. Browse the category tags above to jump straight into your favorite genre.",
+        "Use the category tags above to jump into Action, Puzzle, Racing, Sports, Arcade, or Strategy. Each page is a list of free unblocked browser games for that style of play.",
       ],
       closing:
-        "New titles are added regularly, giving you fresh content to explore every time you visit.",
+        "New HTML5 titles are added often, so there is usually something unused to try.",
     },
     {
       id: "new-and-popular",
       title: "New Games and Popular Games",
       paragraphs: [
-        "Our library grows every week with New Games from talented developers around the world. You will also find Popular Games loved by millions of players, from exciting adventures and racing games to strategy, sports, puzzles, and multiplayer challenges. Whether you enjoy short sessions or long gaming marathons, ZenFunGames offers something for everyone.",
+        "New Games is the newest unblocked titles on The Dressing Up Games. Popular Games is what people actually open — from arcade runs and puzzle boards to racing and sports. Pick New for a fresh page, or Popular when you want a game that already has a crowd.",
       ],
       links: [
         { label: "New Games", href: "/new" },
@@ -39,21 +39,21 @@ export const HOME_SEO_CONTENT = {
       id: "html5-games",
       title: "HTML5 Games for Every Device",
       paragraphs: [
-        "Every game on ZenFunGames is built with modern HTML5 technology, delivering fast performance without plugins or downloads. Play on Windows, Mac, Android, iPhone, or tablet using your favorite browser. Your progress starts instantly with no waiting and no complicated setup.",
+        "These Browser Games work in Chrome, Safari, Edge, and other modern browsers on Windows, Mac, Android, and iPhone. There is no plugin. Open the page, press play, and the game fills the player.",
       ],
     },
     {
       id: "play-anywhere",
       title: "Play on Restricted Networks",
       paragraphs: [
-        "Need games that work on restricted networks? Our Unblocked Games collection helps you enjoy fun gameplay wherever access is available. Play directly from your browser with no installation and no extra software required.",
+        "Unblocked Games here are meant to load in a regular browser tab. That helps when app stores or installers are blocked. Your school or workplace filter still has the last word, but you never need extra software to try a game.",
       ],
     },
     {
       id: "why-choose",
-      title: "Why Choose ZenFunGames?",
+      title: "Why Choose The Dressing Up Games?",
       paragraphs: [
-        "ZenFunGames makes it easy to play Unblocked Games and Free Online Games anytime. Enjoy fast loading Browser Games, Instant Games, and No Download Games on PC, mobile, and tablet. With new HTML5 Games added regularly, you'll always find Popular Games, Puzzle Games, Action Games, Arcade Games, Multiplayer Games, Casual Games, Educational Games, and Creative Games to enjoy for free.",
+        "Use The Dressing Up Games when you want Unblocked Games and Free Online Games with a short path from click to play. Instant Games, No Download Games, and HTML5 Browser Games across Puzzle Games, Action Games, Arcade Games, Racing Games, Sports Games, and Strategy Games — all free in the browser.",
       ],
     },
   ],

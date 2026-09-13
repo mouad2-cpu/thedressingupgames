@@ -8,7 +8,7 @@ export const metadata: Metadata = buildPageMetadata({
   path: "/contact",
   title: "Contact Us",
   description:
-    "Get in touch with ZenFun Games — report issues, suggest games, ask questions, or partner with us.",
+    "Get in touch with The Dressing Up Games — report a game issue, suggest an unblocked title, or ask a question.",
 });
 
 export default async function ContactPage() {

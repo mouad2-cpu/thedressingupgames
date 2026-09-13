@@ -1,5 +1,5 @@
 /**
- * Schema.org JSON-LD types used by ZenFun Games.
+ * Schema.org JSON-LD types used by The Dressing Up Games.
  * Keep these intentionally narrow — only properties we emit.
  */
 

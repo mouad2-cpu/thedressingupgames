@@ -2,9 +2,9 @@ import { SettingsForm } from "@/components/admin/settings-form";
 import { prisma } from "@/lib/db";
 
 const DEFAULT_SETTINGS = {
-  siteName: "BrowserGames",
+  siteName: "The Dressing Up Games",
   cdnUrl: "",
-  domain: "localhost:3000",
+  domain: "www.thedressingupgames.com",
   featureFlags: {
     userRegistration: true,
     developerUploads: true,

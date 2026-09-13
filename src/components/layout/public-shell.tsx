@@ -11,6 +11,7 @@ import { SidebarToggleIcon } from "./sidebar-toggle-icon";
 import { SiteFooter } from "./site-footer";
 import { useLanguage } from "./language-provider";
 import { isSidebarHiddenPath } from "@/lib/menu-page-routes";
+import { SITE_LOGO, SITE_NAME } from "@/lib/site-config";
 
 type Props = {
   session: Session | null;
@@ -58,10 +59,10 @@ export function PublicShell({ session, categories, menuPages, children }: Props)
 
           <Link href="/" className="shrink-0" aria-label={t("shell.homeAria")}>
             <Image
-              src="/zenfun-brand.png"
-              alt="ZenFun Games"
-              width={220}
-              height={96}
+              src={SITE_LOGO.path}
+              alt={SITE_NAME}
+              width={SITE_LOGO.width}
+              height={SITE_LOGO.height}
               priority
               unoptimized
               className="h-[88px] w-auto object-contain sm:h-[96px]"

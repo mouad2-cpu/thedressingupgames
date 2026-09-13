@@ -8,7 +8,7 @@ const FAQ_KEYS = ["1", "2", "3", "4", "5"] as const;
 
 export async function getContactFaqItems(): Promise<FaqItemInput[]> {
   const cookieStore = await cookies();
-  const cookieLocale = cookieStore.get("zenfun-locale")?.value;
+  const cookieLocale = cookieStore.get("tdu-locale")?.value;
   const locale: LocaleCode =
     cookieLocale && isLocaleCode(cookieLocale) ? cookieLocale : "en";
 
