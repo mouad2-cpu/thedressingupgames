@@ -20,7 +20,7 @@ const categories = [
     icon: "shirt",
     sortOrder: 0,
     description:
-      "Play free unblocked dress-up games online. Fashion, makeup, salon, and character creators as HTML5 in your browser — no download.",
+      "Play unblocked dress-up, makeup, salon, and character-creator games on The Dressing Up Games. HTML5 in your browser — no download.",
   },
   { slug: "action", name: "Action", icon: "zap", sortOrder: 1 },
   { slug: "puzzle", name: "Puzzle", icon: "puzzle", sortOrder: 2 },
@@ -109,6 +109,7 @@ async function main() {
     loadGameList("batch25-gamesnacks.json"),
     loadGameList("batch39-addictinggames.json"),
     loadGameList("batch-playhop-dressup.json"),
+    loadGameList("batch-gamerdam-girls.json"),
   ]);
 
   for (const game of drafts) {
