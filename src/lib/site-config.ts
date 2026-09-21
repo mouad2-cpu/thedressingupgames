@@ -37,8 +37,8 @@ export const GA_MEASUREMENT_ID = (
 /** Primary brand mark used in UI, sitemap, and ImageObject structured data. */
 export const SITE_LOGO = {
   path: "/tdu-brand.svg",
-  width: 220,
-  height: 96,
+  width: 320,
+  height: 80,
   encodingFormat: "image/svg+xml",
   alt: SITE_NAME,
 } as const;
