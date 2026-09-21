@@ -102,6 +102,7 @@ export const ADMIN_NAV: AdminNavItem[] = [
     href: "/admin/games",
     label: "Games",
     permission: PERMISSIONS.GAMES_EDIT,
+    children: [{ href: "/admin/replace-dress-up", label: "Replace dress-up" }],
   },
   { href: "/admin/users", label: "Users", permission: PERMISSIONS.USERS_BAN },
   {

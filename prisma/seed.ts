@@ -10,6 +10,7 @@ import {
   formatUnblockedDressUpMetaTitle,
   formatUnblockedGameMetaTitle,
 } from "../src/lib/unblocked-game-seo";
+import { PLAYHOP_DRESSUP_SLUGS } from "../src/lib/playhop-dressup-slugs";
 
 const prisma = new PrismaClient();
 
@@ -43,10 +44,6 @@ const FEATURED_SLUGS = new Set([
   "bloons-tower-defense-4",
   "age-of-war",
   "cut-the-rope",
-  "k-pop-stylist-idol-girls",
-  "toca-life-habillez-vous-pour-les-filles",
-  "pony-creator-jeu-dhabillage-pour-filles",
-  "lol-surprise-dolls-unlock-all-100",
 ]);
 
 type DraftGame = {
@@ -103,12 +100,18 @@ async function main() {
     (await prisma.category.findMany()).map((c) => [c.slug, c.id])
   );
 
+  const removedPlayhop = await prisma.game.deleteMany({
+    where: { slug: { in: [...PLAYHOP_DRESSUP_SLUGS] } },
+  });
+  if (removedPlayhop.count > 0) {
+    console.log(`Removed ${removedPlayhop.count} old Playhop dress-up games`);
+  }
+
   const drafts = mergeGames([
     loadGameList("gamesnacks-drafts.json"),
     loadGameList("gamesnacks-batches-1-8-seed.json"),
     loadGameList("batch25-gamesnacks.json"),
     loadGameList("batch39-addictinggames.json"),
-    loadGameList("batch-playhop-dressup.json"),
     loadGameList("batch-gamerdam-girls.json"),
   ]);
 
